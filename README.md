@@ -50,7 +50,7 @@ Example:
 4. `courier pickup`
 5. Add this to your project's package.json
 ```json
-"courier": ['packageA', 'packageB']
+"courier": ["packageA", "packageB"]
 ```
 6. In your project, run `courier drop`
 7. When done, run `courier reset`

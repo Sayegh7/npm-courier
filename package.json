@@ -11,6 +11,11 @@
   },
   "preferGlobal": true,
   "author": "Ahmed El Sayegh",
+  "keywords": [
+    "local",
+    "link",
+    "npm"
+  ],
   "license": "MIT",
   "dependencies": {
     "args": "^5.0.0",
