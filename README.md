@@ -23,8 +23,6 @@ If you've ever developed an npm package. You know how annoying it is to test it 
 3. Go to your project root.
 4. Run `courier drop <package name>`
 
-If everything is successful, you should find that your project's `package.json` has changed the package version to a relative route. Now your package has been installed inside your project.
-
 Additionally, if you want to run `npm-courier` so that it watches for changes in the package and automatically applies them to your project follow these additional steps:
 
 5. Go to your local npm module.

@@ -7,11 +7,23 @@
     "courier": "bin/index.js"
   },
   "scripts": {
-    "start": "node lib/index.js"
+    "start": "node lib/index.js",
+    "test": "NODE_ENV=test jest --runInBand --detectOpenHandles"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Sayegh7/npm-courier"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "./dist"
+    ],
+    "collectCoverageFrom": [
+      "lib/**/*.js",
+      "lib/*.js"
+    ]
   },
   "preferGlobal": true,
   "author": "Ahmed El Sayegh",
@@ -27,9 +39,16 @@
   "license": "MIT",
   "dependencies": {
     "args": "^5.0.0",
+    "chalk": "^2.4.1",
     "debounce": "^1.2.0",
+    "folder-hash": "^2.1.2",
     "nedb": "^1.8.0",
     "node-watch": "^0.5.9",
     "shelljs": "^0.8.3"
+  },
+  "devDependencies": {
+    "dotenv": "^6.2.0",
+    "faker": "^4.1.0",
+    "nedb-promises": "^3.0.2"
   }
 }
