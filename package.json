@@ -42,6 +42,7 @@
     "chalk": "^2.4.1",
     "debounce": "^1.2.0",
     "folder-hash": "^2.1.2",
+    "md5-dir": "^0.2.0",
     "nedb": "^1.8.0",
     "node-watch": "^0.5.9",
     "shelljs": "^0.8.3"
