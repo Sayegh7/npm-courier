@@ -1,16 +1,7 @@
-const faker = require('faker')
-const Datastore = require('nedb-promises')
-const db = Datastore.create({ filename: `${__dirname}/db` })
-const shell = require('shelljs')
-process.env.COURIER = __dirname
+var exec = require('shelljs.exec')
 
-beforeAll(async () => {
-  return await db.load()
+test('Drop command works', () => {
+  const response = exec('courier drop npm-courier')
+  expect(response.stderr).toHaveLength(0)
+  expect(response.stdout).toContain('Installed package')
 })
-
-test('Drop command works',async () => {
-  shell.exec('courier drop')
-  let result = await db.findOne({name: 'npm-courier'});
-  expect(result.recipients).toContain(process.cwd())
-})
-

@@ -50,6 +50,7 @@
   "devDependencies": {
     "dotenv": "^6.2.0",
     "faker": "^4.1.0",
-    "nedb-promises": "^3.0.2"
+    "nedb-promises": "^3.0.2",
+    "shelljs.exec": "^1.1.7"
   }
 }

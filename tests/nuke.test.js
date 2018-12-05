@@ -1,16 +1,7 @@
-const faker = require('faker')
-const Datastore = require('nedb-promises')
-const db = Datastore.create({ filename: `${__dirname}/db` })
-const shell = require('shelljs')
-process.env.COURIER = __dirname
+var exec = require('shelljs.exec')
 
-beforeAll(async () => {
-  return await db.load()
-})
-
-
-test('Nuke command works',async () => {
-  shell.exec('courier nuke')
-  let result = await db.find({})
-  expect(result).toHaveLength(0)
+test('Nuke command works', () => {
+  const response = exec('courier nuke')
+  expect(response.stderr).toHaveLength(0)
+  expect(response.stdout).toMatch('Registry nuked')
 })
