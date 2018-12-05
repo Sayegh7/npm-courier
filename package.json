@@ -1,6 +1,6 @@
 {
   "name": "npm-courier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./bin/index.js",
   "bin": {
@@ -9,22 +9,27 @@
   "scripts": {
     "start": "node lib/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sayegh7/npm-courier"
+  },
   "preferGlobal": true,
   "author": "Ahmed El Sayegh",
   "keywords": [
     "local",
     "link",
+    "courier",
+    "npm-courier",
+    "package",
+    "delivery",
     "npm"
   ],
   "license": "MIT",
   "dependencies": {
     "args": "^5.0.0",
     "debounce": "^1.2.0",
-    "directory-watcher": "^2.0.3",
     "nedb": "^1.8.0",
+    "node-watch": "^0.5.9",
     "shelljs": "^0.8.3"
-  },
-  "courier": [
-    "@impargo/components"
-  ]
+  }
 }
