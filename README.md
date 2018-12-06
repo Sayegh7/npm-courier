@@ -11,9 +11,7 @@ If you've ever developed an npm package. You know how annoying it is to test it 
 
 ## Installation
 1.  `npm install -g npm-courier`
-2.  Create a folder in your home directory called `courier`
-3.  Add this line to your `.bash_profile`: `export COURIER=~/courier`
-4.  Profit!
+2.  Profit!
 
 ## Usage
 
@@ -22,8 +20,6 @@ If you've ever developed an npm package. You know how annoying it is to test it 
 2. Run `courier pickup`.
 3. Go to your project root.
 4. Run `courier drop <package name>`
-
-If everything is successful, you should find that your project's `package.json` has changed the package version to a relative route. Now your package has been installed inside your project.
 
 Additionally, if you want to run `npm-courier` so that it watches for changes in the package and automatically applies them to your project follow these additional steps:
 
