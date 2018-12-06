@@ -11,9 +11,7 @@ If you've ever developed an npm package. You know how annoying it is to test it 
 
 ## Installation
 1.  `npm install -g npm-courier`
-2.  Create a folder in your home directory called `courier`
-3.  Add this line to your `.bash_profile`: `export COURIER=~/courier`
-4.  Profit!
+2.  Profit!
 
 ## Usage
 
